@@ -16,7 +16,7 @@ class AddContact extends Component {
 
         console.log(contact);
 
-        fetch('http://localhost:8080/api/v1/contact/',{
+        fetch('/api/v1/contact/',{
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

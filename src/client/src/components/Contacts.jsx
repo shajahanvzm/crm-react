@@ -12,7 +12,7 @@ constructor(props) {
 }
 
 componentDidMount() {
-    fetch('http://localhost:8080/api/v1/contact/')
+    fetch('/api/v1/contact/')
     .then(response => response.json())
     .then(data => this.setState({ contacts: data }))
 }
